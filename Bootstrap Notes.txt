@@ -1,0 +1,683 @@
+* What is Bootstrap?
+
+1. Bootstrap can be used by two ways. 1. CDN- Content delivery network 2. Downloaded link.
+
+2. For using CDN we should use the cdn link before our main css file.
+
+3. For moving text from h1 tag by bootstrap just use class in h1 tag text-center. Example:
+
+<h1 class="text-center">Welcome to Bootstrap</h1>
+
+4. For using dowload link download from the website then from CSS folder copy bootstrap.min.css file to the main file and move it to the css folder then link it.
+
+--Part 1--
+
+1. Two main things in Bootstrap- Documentation & Grid system.
+
+2. For taking class in div tag use div.classname then press tab div tag and class name will be created.
+
+3. Bootstrap container class 1140px.
+
+4. For move anything middlepoint 1140px use div container class in bootstrap.
+
+5. For full width of a page use div container-fluid class in bootstrap. Example:
+
+<div class="container-fluid width">
+
+<div class="container shaon">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus odit soluta accusamus obcaecati necessitatibus ratione vitae quos harum ea ab perspiciatis culpa optio officiis tenetur vero, repellat aliquid alias esse laborum? Voluptatem beatae harum animi nihil, voluptatum, exercitationem adipisci vel, maxime natus voluptatibus laboriosam blanditiis rerum hic. Recusandae, enim facere.</p>
+    </div>
+</div>
+
+Note: container-fluid don't use nowadays.
+
+--Part 2--
+
+1. We have to use html semantic tag in HTML 5. Now, we don't use container-fluid insted of it we have to use div.section class. 
+
+HTML sematic tags are header, nav, section, aside, footer etc.
+
+2. If we use div.container under div.section class then it will work as like as div.container-fluid & div.container tag. Example:
+
+<div class="section width">
+       <div class="container">
+           <h1>This is our html semantic tag use</h1>
+       </div>
+</div>
+
+--Part 3--
+
+1. At first we take div.section tag & under this tag also take div.container tag & in this tag take p tag. In p tag we can take bootstrap class for changing text color. For changing text color we have to use bootstrap class text-danger, text-succes etc.
+
+2. Now, if we want to overwrite into bootstrap color then we take the class of the bootstrap color in our main css file and can change the color.
+
+3. Note: If our main css file stay up from the bootstrap link then overwrite will not work. So, As always we should keep our main css file after bootstrap link.
+
+
+--Part 4--
+
+1. All the website structure should have row and column. We can divide all the website of the world by row and column.
+
+2. row is a class of bootstrap.
+
+3. By bootstrap class we can take 12 column.
+
+4. Bootstrap gridsystem- If we take div.container then under this div also take div.row and under this tag also take div.col three times. Then we can take three column in a web page. 
+
+Note: We can also see the grid system from bootstrap website.
+
+Example: 
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            one column
+        </div>
+        <div class="col">
+            two column
+        </div>
+        <div class="col">
+            three column
+        </div>
+    </div>
+</div>
+
+--Part 5--
+
+Grid System
+
+1. We will do it by professionally. At first take section tag. Then take div.container tag, then take div.row tag, after that we can take div.col-8 tag because we want to take 8 column for this tag and also take div.col-4 tag. Because we know that by bootstrap we can take 12 column. Example:
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 myclass">
+                8
+            </div>
+            <div class="col-4 myclass">
+                4
+            </div>
+        </div>
+    </div>
+</section>
+
+2. If we want to take at first 2 column, then 8 column & then again 2 column. Then at first we take section tag, then div.row tag, then div.col-2 tag, then div.col-8 tag and then div.col-2 tag.
+
+Now we have two section so if we want to use margin in bootstrap we have use mt-5 class. We can use till 5 for mt class. If we increase from 5 in bootstrap class for margin it will not. If we need more than 5 in margin then we have to use raw coding of css. Example:
+
+<section class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-2 myclass">
+                2
+            </div>
+            <div class="col-8 myclass">
+                8
+            </div>
+            <div class="col-2 myclass">
+                2
+            </div>
+        </div>
+    </div>
+</section>
+
+3. For using margin in bootstrap for margin left we can use ml class, for margin bottom we can use mb class, for margin right we can use mr class.
+
+4. Bootstrap is not counting on pixel it will count by rem.
+
+5. For overwrite margin in bootstrap by inspect element copy rule the class copy it to main css file and give value. Then it will be overwrite over bootstrap.
+
+6. For using column and row by bootstrap we can use below example:
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 myclass">
+                8
+            </div>
+            <div class="col-4 myclass">
+                4
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-2 myclass">
+                2
+            </div>
+            <div class="col-8 myclass">
+                8
+            </div>
+            <div class="col-2 myclass">
+                2
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 myclass">
+                8
+            </div>
+            <div class="col-2 myclass">
+                2
+            </div>
+            <div class="col-2 myclass">
+                2
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 myclass">
+                6
+            </div>
+            <div class="col-6 myclass">
+                6
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 myclass">
+                6
+            </div>
+            <div class="col-3 myclass">
+                3
+            </div>
+            <div class="col-3 myclass">
+                3
+            </div>
+        </div>
+    </div>
+</section>
+
+
+--Part 6--
+
+1. If we want to take 8 column, 2 column and 2 column. Then have to take section tag, div.container tag, div.row tag, div.col-8, div.col-2, div.col-2 tag. Then also take lorem text.
+
+2. For checking responsiveness in Mozilla firefox use shortcut key ctrl+shift+m. 
+
+--Part 7--
+
+1. In bootstrap for responsive the website with row and column. We can use column for small, medium, large & extra large device. We can set the column specifically for the all devices which is responsive.
+
+We can see the responsiveness in firefox by shortuct key ctrl+shift+m
+
+2. For sm device- 576px, md device 768px, lg device 992px, xl device 1200px use in bootstrap. Example:
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-2 col-xl-12 myclass">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis porro amet similique enim aperiam error itaque fuga cum numquam dolor?
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-8 col-xl-12 myclass">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam perferendis officia ullam tenetur incidunt eveniet vel quos, atque corporis fuga!
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-2 col-xl-12 myclass">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sint harum sit tempore consectetur est eum voluptas velit sequi illo.
+            </div>
+        </div>
+    </div>
+</section> 
+
+--Part 8--
+
+1. Bootstrap Typography- heading tag by default size in bootstrap are below:
+
+h1 2.5rem = 40px
+h2 2 rem = 32px
+h3 1.75rem = 28px
+h4 1.5rem = 24px
+h5 1.25rem = 20px
+h6 1rem = 16px
+
+2. In bootstrap we can use all the heading tags are in class. Such as in a p tag if we use class h1 then it will show us the h1 tag size text. Example:
+
+<p class="h1">This is our Bootstrap heading</p>
+<p class="h2">This is our Bootstrap heading</p>
+
+3. If we use h1 tag and in this if we use class of h5 then it will show us h5 tag text size. Example: 
+
+<h1 class="h5">This is our heading</h1>
+
+4. There are a class display in bootstrap. If we need large text then we can use display class. 4 types of display class. display 1 to display 4. Example:
+
+<p class="display-1">This is display class</p>
+
+5. Bootstrap has by default 0.5rem margin bottom. If we take 20px margin bottom then in bootstrap by default it will increase 0.5rem margin bottom.
+
+6. For text style change in bootstrap use class lead. Example:
+
+<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, necessitatibus.</p>
+
+7. We can overwrite the lead class. If we take the lead class in our main css file and change the font size then it will be overwrite.
+
+Note: In bootstrap no need to overwrite directly the bootstrap class. Because we can use this bootstrap class in other places of the website. So we can take another class and work on the taken class for bootstrap class. Example:
+
+<p class="lead lead2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, necessitatibus.</p>
+
+.lead2{
+    font-size: 40px;
+}
+
+8. We can use blockquote tag for using any quote. In blockquote tag we can use class blockquote bootstrap class. And for the quote name we can use footer tag in blockquote tag and take blockquote-footer class in footer tag. Example:
+
+<blockquote class="blockquote text-center">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dignissimos tenetur assumenda eius. Fuga quo distinctio accusantium voluptatem! Pariatur, quam!</p>
+    <footer class="blockquote-footer">Ataur Rahman</footer>
+</blockquote>
+
+
+--Part 9--
+
+1.For text move to center use text-center class of bootstrap. For capitalize use text-capitalize, for uppercase use text-uppercase, for lowercase use text-lowercase, for both side equal text use text-justify, for bold the text use font-weight-bold, for noraml text use font-weight-normal, for lightup text use font-weight-light, for text no wrap use text-nowrap, by default texts are wrap, if the texts are nowrap then for wrap we can use text-wrap etc. Example:
+
+<div class="container">
+    <p class="text-justify text-lowercase font-weight-light text-nowrap">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nemo libero, debitis atque id enim voluptates autem. Officia est placeat dolorum quaerat, fugiat molestias dignissimos nemo in fugit expedita maxime, quisquam praesentium repudiandae quae animi iusto. Omnis ex sequi placeat fugit ea provident, voluptatem, quibusdam voluptate minima aspernatur blanditiis ad?</p>
+</div>
+
+2. For using unordered list in bootstrap if we want to remove the bullets just use list-unstyled class then it will remove from the list. Example:
+
+<ul class="list-unstyled">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+
+3. For using list inline if we want to make menu bar then at first we take ul li tag with a tag blank link. If we use list-inline in ul tag then it will remove the bullets and when we use list-inline-item in all li tag then the lists are will be inline. Example:
+
+Note: shortcut to take ul li and a tag: ul>li>a 
+
+<ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Home</a></li>
+        <li class="list-inline-item"><a href="#">About</a></li>
+        <li class="list-inline-item"><a href="#">Services</a></li>
+        <li class="list-inline-item"><a href="#">Contact</a></li>
+</ul> 
+
+4. To remove a tag link line take another class in ul tag. Then from main css file if we take text-decoration:none; it will remove the link line of a tag. Also can padding from one menu to another. Example:
+
+ul class="list-inline tdec">
+        <li class="list-inline-item"><a href="#">Home</a></li>
+        <li class="list-inline-item"><a href="#">About</a></li>
+        <li class="list-inline-item"><a href="#">Services</a></li>
+        <li class="list-inline-item"><a href="#">Contact</a></li>
+    </ul>
+
+.tdec li a{
+    text-decoration: none;
+    color: aqua;
+    padding: 0 15px;
+}
+
+5. dl, dt & dd tag. For using something important then describe its meaning used these tags. Example:
+
+<dl>
+        <dt>CSE</dt>
+        <dd>Computer Science & Engineering</dd>
+    </dl>
+
+
+--Part 10--
+
+1. Bootstrap utilities- Bootstrap color: If we take a p tag and lorem text then we can take bootstrap color class and change the color by defining bootstrap color class in p tag. Also can overwrite the bootstrap color class. Example:
+
+<div class="container">
+    <p class="text-primary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, quae!</p>
+
+    <p class="text-danger">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, voluptatum?</p>
+
+    <h1 class="text-success">this is our heading one</h1>
+</div>
+
+.text-primary {
+    color: #21c225!important;
+}
+
+2. Bootstrap background color: In bootstrap for changing background color we can use the some bootstrap classes. Such as bg-dark, bg-primary, bg-info, bg-danger etc are bootstrap bg color class. We can overwrite the bgcolor of bootstrap. But this is not a perfect way. The perfect way is we can take another class for working on main css file. Example: 
+
+<p class="text-success bg-danger bgcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsum provident expedita illum, optio at doloribus, repellendus laborum nobis repudiandae eveniet recusandae nostrum libero magni sequi adipisci, quod beatae fugit.</p>
+
+.bgcolor{
+    background-color: royalblue;
+}
+
+3. Bootstrap background gradient: Background gradient is not working well and linked with js. For using gradient we take a class and working on main css file. Go to online gradient generator. Copy the gradient color and paste in the main css gradient class. Two types of gradient color linear and redial. Example:
+
+<h1 class="gdcolor">This is our heading two</h1>
+
+.gdcolor{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+
+--Part 11--
+
+1. Bootstrap margin- Bootstrap margin count 1 to 5. We can use bootstrap margin by define m, mt, mr, mb, ml, mx, my. Also for padding it is same as margin. For padding in bootstrap it can be define as p, pt, pr, pb, pl, px, py. Example:
+
+<div class="container">
+        <p class="bg-primary m-5 p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, libero.</p>
+
+</div>
+
+
+--Part 12--
+
+1. Bootstrap Border- By raw css we can do border by below example:
+
+<div class="container">
+        <span class="mybox"></span>
+</div>
+
+.mybox{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 2px solid green;
+}
+
+2. Bootstrap Border- In bootstrap only border class cover all the side of the border. And for specifically we can use border-top, border-right, border-left, border-bottom class. Example:
+
+<div class="container">
+        <span class="mybox border border-danger"></span>
+        <span class="mybox border-top border-danger"></span>
+        <span class="mybox border-bottom border-danger"></span>
+        <span class="mybox border-left border-danger"></span>
+        <span class="mybox border-right border-danger"></span>
+    </div>
+
+.mybox{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+3. In bootstrap to remove specifically remove one side border use border-top-0, border-bottom-0, border-left-0, border-right-0 class in bootstrap. Example:
+
+ <span class="mybox border border-top-0 border-danger"></span>
+        <span class="mybox border border-bottom-0 border-danger"></span>        
+        <span class="mybox border border-left-0 border-danger"></span>        
+        <span class="mybox border border-right-0 border-danger"></span>
+
+4. For using border color use border-primary, border-info, border-danger etc.
+
+5. For using border radius in raw css we can use border-radius: 10px;
+
+For using border radius in bootstrap we use rounded class for all side border in bootstrap class. And for specifically border radius in bootstrap use rounded-top, rounded-bottom, rounded-left, rounded-right, rounded-circle, rounded-pill.
+
+<span class="mybox border rounded border-danger"></span>
+<span class="mybox border rounded-top border-danger"></span>
+<span class="mybox border rounded-bottom border-danger"></span>
+<span class="mybox border rounded-right border-danger"></span>
+<span class="mybox border rounded-left border-danger"></span>
+<span class="mybox border rounded-pill border-danger"></span>
+
+.mybox{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}     
+
+
+
+--Part-13--
+
+1. Bootstrap float- In bootstrap for using float we can use float-left, float-right class. Example:
+
+<div class="container">
+        
+        <p class="float-left">Lorem ipsum dolor sit amet.</p>
+        <p class="float-right">Lorem ipsum dolor sit amet.</p>
+</div>
+
+2. In bootstrap when we use float left & right then in the middle point the next p tag will be there. For solve this issue we can use clearfix class in bootstrap. Example:
+
+<div class="container">
+        
+        <p class="float-left">Lorem ipsum dolor sit amet.</p>
+        <p class="float-right">Lorem ipsum dolor sit amet.</p>
+
+        <div class="clearfix"></div>
+
+        <p>Ataur Rahman</p>
+</div>
+
+Another example with button:
+
+ <div class="clearfix">
+            <button class="btn btn-primary float-left">Click Me</button>
+            <button class="btn btn-primary float-right">Click Me</button>
+
+            <p>Ataur Rahman</p>
+ </div>
+
+
+--Part 14--
+
+1. For using display inline in bootstrap use d-inline class. Example:
+
+<div class="container">
+        
+        <div class="text-white bg-success mb-4 d-inline">Display One</div>
+        <div class="text-danger bg-info d-inline">Display Two</div>
+</div>
+
+2. For display block in bootstrap just use d-block class. If we take span tag we know that this is a inline element. So for blocking this element we have to use d-block class in bootstrap. Example: 
+
+<div class="container">
+        
+        <div class="text-white bg-success mb-4 d-inline">Display One</div>
+        <div class="text-danger bg-info d-inline">Display Two</div>
+
+        <span class="text-white bg-success d-block">Display</span>
+</div>
+
+3. For embeded in bootstrap just copy the embeded link from youtube and past it with a bootstrap class embed-responsive embed-responsive-16by9 to responsive the video content. Example: 
+
+<div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GqpLbzFEzKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+4. For using positioning in bootstrap- if we take large text content with scrollbar then we can use it. Such as fixed-top class will fix the text in the top and fixed-bottom class will fix the text in bottom. Also, sticky-top is using for the scrolling top position. Example:
+
+<div class="fixed-top text-white bg-dark">Ataur Rahman</div>
+
+
+--Part 15--
+
+1. Bootstrap components- Alert class in bootstrap. For alert after clicking in button we can use alert class, alert-primary color, role="alert" need to use. Example:
+
+<div class="alert alert-primary" role="alert">
+       Your Application Submitted Successfully
+   </div>
+
+   <div class="alert alert-danger" role="alert">
+    Your Application Submitted Successfully
+</div>
+
+2. For using alert link in bootstrap use below example:
+
+<div class="alert alert-primary" role="alert">
+    Your Application wrong! <a href="#" class="alert-link"> Please click me</a>
+</div>
+
+3. We can use alert-heading class in bootstrap. As an example we can use below alert:
+
+div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Thank You!</h4>
+    <p>Your Application Submitted Successfully</p>
+    <hr>
+</div>
+
+4. For dismissal alert we can use below example.
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Sorry</strong> You should check in on some of those fields below.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+--Part 16--
+
+1. link up jquery file.
+
+
+--Part 17--
+
+1. Bootstrap Badge- for using badge need to take button and also take badge class & color. Example: 
+
+div class="container">
+
+    <button type="button" class="btn btn-primary">
+      Messages <span class="badge badge-light">15</span>
+    </button>
+
+  </div>
+
+2. Bootstrap Breadcumb- Indicates the current page location by this bootstrap class.
+
+Example:
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item"><a href="#">Others</a></li>
+        <li class="breadcrumb-item"><a href="#">Contacts</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Services</li>
+      </ol>
+    </nav>
+
+3. Bootstrap Button- for using bootstrap button just use btn class and btn-primary, info, danger etc for color.
+
+Example: 
+
+<button class="btn btn-primary">Click Me</button>
+
+We can do button design by raw css. Take a class button-custom then work on it as below:
+
+ <button class="btn btn-custom"><a href="http://www.google.com" target="_blank">Click Me</a></button>
+
+.btn-custom:hover{
+    color: wheat;
+    background: tomato;
+}
+
+.btn-custom{
+    
+    background: blue;
+    border-radius: 2px;
+    padding: 6px 15px;
+}
+
+.btn-custom a{
+    color: teal;
+    text-decoration: none;
+}
+
+
+--Part 18--
+
+1. Bootstrap Card- For using bootstrap we can copy the code from bootstrap website and work on it. Also take class and work for raw css coding. Example:
+
+<div class="container">
+
+
+    <div class="card bread-style float-left mr-2">
+      <img class="card-img-top custom-image" src="01.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Ataur Rahman</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Hire Me</a>
+      </div>
+    </div>
+
+    <div class="card bread-style">
+      <img class="card-img-top custom-image" src="01.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Ataur Rahman</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Hire Me</a>
+      </div>
+    </div>
+
+    
+  </div>
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.custom-image{
+    width:250px;
+}
+
+.bread-style{
+    width: 250px;
+    background: gray;
+    color: white;
+
+}
+
+
+--Part 19--
+
+1. Indentation shorcut ctrl+A the shift+alt+f.
+
+2. Bootstrap Carousel- Copy the code from bootstrap and edit on it. Give the 3 slid image in the code then we can see the sliding image.
+
+
+--Part 20--
+
+1. Bootstrap Collapse- Copy collapse code from bootstrap website then edit in the codes. Remove the second button and duplicate the first button. In duplicate button if we click one button then it will collapse for two buttons so for solving this issue we need to change the id name for second one.
+
+2. Multiple collapse- We can also use one button two collapse window open. For using this copy code form bootstrap and remvoe another two button just keep multiple collapse one and edit on that.
+
+3. Accordion Collapse- Also copy code from bootstrap then edit on that. 
+
+Note: For first accordion collapse if we want to close by default open collapse need to remove show class.
+
+
+
+--Part 21--
+
+1. Bootstrap Form- Just copy from website and edit on it. We remove the check out and small tag. Then add first name and last name. Also add for class to select the name and cursor will be in the form.
+
+2. Bootstrap Navbar- Copy the code from website then edit on it. Remove the disable and dropdown from the navbar.
+
+3. In the navbar text we should use logo of the website. For responsive image we should use class img-fluid.
+
+JPG to PNG convert by photoshop
+
+From ul tag we can change margin if we use mr-auto then menu bar will be move to right.
+
+Also take custom class for menu and custom-color class.
+
+From menu class we can padding the menu. Also change the color of the text of menu take class menu ul li a tag.
+
+for overwrite over bootstrap should be use !important.
+
+4. Bootstrap pagination- Just copy the code from bootstrap and edit on it.

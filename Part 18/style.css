@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.custom-image{
+    width:250px;
+}
+
+.bread-style{
+    width: 250px;
+    background: gray;
+    color: white;
+
+}
+

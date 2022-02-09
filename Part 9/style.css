@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.myclass{
+    background: #dddddd;
+    border: 2px solid red;
+}
+
+.lead2{
+    font-size: 40px;
+
+}
+
+.tdec li a{
+    text-decoration: none;
+    color: aqua;
+    padding: 0 15px;
+}

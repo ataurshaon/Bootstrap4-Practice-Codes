@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.mybox{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
